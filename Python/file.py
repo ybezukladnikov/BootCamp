@@ -48,9 +48,51 @@
 # else:
 #     print((n//10)*((n//10)+1)*100+25)
 
-n = int(input())
+# n = int(input())
 
-print(n*100+90+(9-n))
+# print(n*100+90+(9-n))
+
+N = int(input())
+
+array = list(map(int,input().split()))
+
+even = []
+odd = []
+
+
+for el in array:
+    if (el%2==0):
+        even.append(el)
+    else:
+        odd.append(el)    
+
+for index in range(len(odd)):
+    if(index ==len(odd)-1):
+        print(odd[index], end="")
+    else:
+          print(odd[index], end=" ")   
+
+ 
+print()
+
+for index in range(len(even)):
+    if(index ==len(even)-1):
+        print(even[index], end="")
+    else:
+          print(even[index], end=" ")     
+
+print()
+
+if (len(even)>=len(odd)): print("YES")
+else:
+    print("NO")
+
+# print(array)
+
+# print(even)
+# print(odd)
+
+
 
 
 
