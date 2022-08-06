@@ -52,45 +52,51 @@
 
 # print(n*100+90+(9-n))
 
-N = int(input())
+# N = int(input())
 
-array = list(map(int,input().split()))
+# array = list(map(int,input().split()))
 
-even = []
-odd = []
+# even = []
+# odd = []
 
 
-for el in array:
-    if (el%2==0):
-        even.append(el)
-    else:
-        odd.append(el)    
+# for el in array:
+#     if (el%2==0):
+#         even.append(el)
+#     else:
+#         odd.append(el)    
 
-for index in range(len(odd)):
-    if(index ==len(odd)-1):
-        print(odd[index], end="")
-    else:
-          print(odd[index], end=" ")   
+# for index in range(len(odd)):
+#     if(index ==len(odd)-1):
+#         print(odd[index], end="")
+#     else:
+#           print(odd[index], end=" ")   
 
  
-print()
+# print()
 
-for index in range(len(even)):
-    if(index ==len(even)-1):
-        print(even[index], end="")
-    else:
-          print(even[index], end=" ")     
+# for index in range(len(even)):
+#     if(index ==len(even)-1):
+#         print(even[index], end="")
+#     else:
+#           print(even[index], end=" ")     
 
-print()
+# print()
 
-if (len(even)>=len(odd)): print("YES")
-else:
-    print("NO")
+# if (len(even)>=len(odd)): print("YES")
+# else:
+#     print("NO")
 
-# print(array)
+a = list(map(int, input().split()))
 
-# print(even)
-# print(odd)
+max_number = max(a)
+
+print(max_number)
+
+
+
+
+
 
 
 
