@@ -87,11 +87,25 @@
 # else:
 #     print("NO")
 
-a = list(map(int, input().split()))
+# ЗАДАЧА №7
 
-max_number = max(a)
+# a = list(map(int, input().split()))
 
-print(max_number)
+# max_number = max(a)
+
+# print(max_number)
+
+# ЗАДАЧА №8	
+
+a, b, c = map(int, input().split())
+
+if (a*b==c):
+    print("YES")
+else:
+    print("NO") 
+
+
+
 
 
 
