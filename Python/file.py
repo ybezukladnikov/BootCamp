@@ -97,12 +97,57 @@
 
 # ЗАДАЧА №8	
 
-a, b, c = map(int, input().split())
+# a, b, c = map(int, input().split())
 
-if (a*b==c):
-    print("YES")
-else:
-    print("NO") 
+# if (a*b==c):
+#     print("YES")
+# else:
+#     print("NO") 
+
+
+# ЗАДАЧА №9
+
+N = int(input())
+
+array = list(map(int, input().split()))
+sum = 0
+for el in array:
+    if (el >0): sum +=el
+
+maxN = array[0]
+indexMax=0
+indexMin=0
+minN = array[0]
+
+for index in range(len(array)):
+    if(maxN < array[index]):
+        maxN = array[index]
+        indexMax = index
+
+    if(minN>array[index]):
+        minN = array[index]
+        indexMin = index
+
+first = indexMin
+second = indexMax
+
+if (indexMin>indexMax):
+    first= indexMax
+    second = indexMin
+   
+
+P = 1
+while(first+1<second):
+    P *=array[first+1]
+    first+=1
+
+
+
+print(sum, P)
+
+
+
+
 
 
 
